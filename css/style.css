@@ -1,19 +1,32 @@
 .content-wrapper {
-  background: url('../assets/background.jpg') no-repeat center center fixed;
   width: 100%;
   height: 100%;
   background-size: cover;
   z-index: -1;
 }
 
-.home-text {
+.home-image {
+  background: url('../assets/background.jpg') no-repeat center center fixed;
+}
+
+.about-image {
+  background: url('../assets/about-background.jpg') no-repeat center center fixed;
+}
+
+.home-text, .home-nav a {
   color: wheat;
 }
 
-.home-nav a {
-  color: wheat;
+.about-text, .about-nav a {
+  color: darkgoldenrod;
 }
 
 .home-nav.nav>li>a:focus, .home-nav.nav>li>a:hover  {
   background-color: transparent;
+  text-decoration: underline;
+}
+
+.about-nav.nav>li>a:focus, .about-nav.nav>li>a:hover  {
+  background-color: transparent;
+  text-decoration: underline;
 }
