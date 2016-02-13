@@ -23,6 +23,10 @@
   color: wheat;
 }
 
+.home-text {
+  margin-left: 15px;
+}
+
 .about-nav a {
   color: darkgoldenrod;
 }
@@ -38,6 +42,23 @@
 
 .weblink-wrapper {
   text-align: center;
+}
+
+.weblink-wrapper i {
+  color: darkgoldenrod;
+  margin-right: 5px;
+}
+
+.weblink-wrapper:hover i {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  margin-right: 10px;
+}
+
+.weblink-wrapper:hover a {
+  font-size: 30px;
+  text-decoration: none;
 }
 
 .home-nav.nav>li>a:focus, .home-nav.nav>li>a:hover  {
