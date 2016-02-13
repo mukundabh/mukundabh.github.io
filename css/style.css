@@ -24,7 +24,7 @@
 
 .about-web, .about-web:hover {
   color: darkgoldenrod;
-  margin: 0 auto;
+  font-size: 20px;
 }
 
 .weblink-wrapper {
@@ -39,4 +39,18 @@
 .about-nav.nav>li>a:focus, .about-nav.nav>li>a:hover  {
   background-color: transparent;
   text-decoration: underline;
+}
+
+.technology-thumbnail {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+}
+
+.technology-thumbnail:hover {
+  opacity: .3;
+}
+
+.thumbnails-wrapper {
+  margin-top: 30px
 }
