@@ -54,6 +54,7 @@
   -ms-transform: scale(1.3);
   transform: scale(1.3);
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .weblink-wrapper:hover a {
