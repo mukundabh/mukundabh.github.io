@@ -41,7 +41,7 @@
 }
 
 .weblink-wrapper {
-  text-align: center;
+  display: inline;
 }
 
 .weblink-wrapper i {
@@ -102,4 +102,8 @@
 
 .contact-wrapper a:hover {
   color: white;
+}
+
+.new-technologies {
+  text-align: center;
 }
