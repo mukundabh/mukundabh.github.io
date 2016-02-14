@@ -19,6 +19,11 @@
   background-size: cover;
 }
 
+.course-image {
+  background: url('../assets/fullstack.png') no-repeat center fixed;
+  background-size: cover;
+}
+
 .home-text, .home-nav a {
   color: wheat;
 }
@@ -33,6 +38,18 @@
 
 .contact-nav a {
   color: black;
+}
+
+.course-nav a, .course-text {
+  color: #402e04;
+}
+
+.course-text {
+  margin: 100px 0 0 400px;
+}
+
+.course-nav {
+  display: inline-block;
 }
 
 .about-web, .about-web:hover {
@@ -73,6 +90,11 @@
 }
 
 .contact-nav.nav>li>a:focus, .contact-nav.nav>li>a:hover  {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.course-nav.nav>li>a:focus, .course-nav.nav>li>a:hover  {
   background-color: transparent;
   text-decoration: underline;
 }
