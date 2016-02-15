@@ -133,7 +133,6 @@
 /*css animation*/
 
 .course-text {
-  position: relative;
   -webkit-animation: color-change 3s infinite;
   -moz-animation: color-change 3s infinite;
   -o-animation: color-change 3s infinite;
