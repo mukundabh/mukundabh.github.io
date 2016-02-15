@@ -41,11 +41,7 @@
 }
 
 .course-nav a{
-  color: #a0740a;
-}
-
-.course-text {
-  margin: 100px 0 0 500px;
+  color: black;
 }
 
 .course-nav {
@@ -129,39 +125,3 @@
 .new-technologies {
   text-align: center;
 }
-
-/*css animation*/
-
-.course-text {
-  -webkit-animation: color-change 3s infinite;
-  -moz-animation: color-change 3s infinite;
-  -o-animation: color-change 3s infinite;
-  -ms-animation: color-change 3s infinite;
-  animation: color-change 3s infinite;
- }
-
- @-webkit-keyframes color-change {
-   0% { color: darkgoldenrod; }
-   50% { color: #4C9D91; }
-   100% { color: darkgoldenrod; }
- }
- @-moz-keyframes color-change {
-   0% { color: darkgoldenrod; }
-   50% { color: #4C9D91; }
-   100% { color: darkgoldenrod; }
- }
- @-ms-keyframes color-change {
-   0% { color: darkgoldenrod; }
-   50% { color: #4C9D91; }
-   100% { color: darkgoldenrod; }
- }
- @-o-keyframes color-change {
-   0% { color: darkgoldenrod; }
-   50% { color: #4C9D91; }
-   100% { color: darkgoldenrod; }
- }
- @keyframes color-change {
-   0% { color: darkgoldenrod;}
-   50% { color: #4C9D91;}
-   100% { color: darkgoldenrod;}
- }
