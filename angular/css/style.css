@@ -1,0 +1,127 @@
+.content-wrapper {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.home-image {
+  background: url('../assets/background.png') no-repeat center fixed;
+  background-size: cover;
+}
+
+.about-image {
+  background: url('../assets/about-background.png') no-repeat center fixed;
+  background-size: cover;
+}
+
+.contact-image {
+  background: url('../assets/contact.png') no-repeat center fixed;
+  background-size: cover;
+}
+
+.course-image {
+  background: url('../assets/fullstack.png') no-repeat center fixed;
+  background-size: cover;
+}
+
+.home-text, .home-nav a {
+  color: wheat;
+}
+
+.home-text {
+  margin-left: 15px;
+}
+
+.about-nav a {
+  color: darkgoldenrod;
+}
+
+.contact-nav a {
+  color: black;
+}
+
+.course-nav a{
+  color: black;
+}
+
+.course-nav {
+  display: inline-block;
+}
+
+.about-web, .about-web:hover {
+  color: darkgoldenrod;
+  font-size: 20px;
+}
+
+.weblink-wrapper {
+  display: inline;
+}
+
+.weblink-wrapper i {
+  color: darkgoldenrod;
+  margin-right: 5px;
+}
+
+.weblink-wrapper:hover i {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.weblink-wrapper:hover a {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.home-nav.nav>li>a:focus, .home-nav.nav>li>a:hover  {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.about-nav.nav>li>a:focus, .about-nav.nav>li>a:hover  {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.contact-nav.nav>li>a:focus, .contact-nav.nav>li>a:hover  {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.course-nav.nav>li>a:focus, .course-nav.nav>li>a:hover  {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.technology-thumbnail {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+}
+
+.technology-thumbnail:hover {
+  opacity: .3;
+}
+
+.thumbnails-wrapper {
+  margin-top: 30px
+}
+
+.contact-wrapper {
+  margin: 50px 0 0 15px;
+}
+
+.contact-wrapper a {
+  color: black;
+  margin-right: 30px;
+}
+
+.contact-wrapper a:hover {
+  color: white;
+}
+
+.new-technologies {
+  text-align: center;
+}

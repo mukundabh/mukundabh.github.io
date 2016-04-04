@@ -1,0 +1,59 @@
+<div data-ng-controller="balanceController">
+
+  <h1>Expenses</h1>
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" placeholder="First Name" ng-model="expenseModel.firstName">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" placeholder="Last Name" ng-model="expenseModel.lastName">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" placeholder="Email" ng-model="expenseModel.email">
+      </br>
+    </div>
+    <div class="form-group" style="margin: 10px 0">
+      <label for="expenseDate">Date</label>
+      <input type="date" class="form-control" id="expenseDate" placeholder="date" ng-model="expenseModel.date">
+      <label for="expenseDescription">Description</label>
+      <input type="text" class="form-control" id="expenseDescription" placeholder="Description" ng-model="expenseModel.description">
+      <label for="expenseAmount">Amount</label>
+      <input type="number" class="form-control" id="expenseAmount" placeholder="Amount" ng-model="expenseModel.amount">
+      <select name="select" ng-model="expenseModel.category">
+        <option value="" disabled selected>Category</option>
+        <option value="gas">Gas</option>
+        <option value="grocery">Grocery</option>
+        <option value="emi">EMI</option>
+        <option value="rent">Rent</option>
+        <option value="restaurant">Restaurant</option>
+      </select>
+    </div>
+  </br>
+    <input type="submit" class="btn btn-primary btn-lg" ng-click="addExpense(expenseModel)" value="Save" />
+  </form>
+
+  <h1>Balances</h1>
+  <table class="table table-bordered">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Date</th>
+      <th>Description</th>
+      <th>Amount</th>
+      <th>Category</th>
+    </tr>
+    <tr ng-repeat="expense in expenses">
+      <td>{{expense.firstName}}</td>
+      <td>{{expense.lastName}}</td>
+      <td>{{expense.email}}</td>
+      <td>{{expense.date | date:'shortDate'}}</td>
+      <td>{{expense.description}}</td>
+      <td>{{expense.amount | currency}}</td>
+      <td>{{expense.category}}</td>
+      <td>
+        <button type="button" class="btn btn-default btn-sm" ng-click="deleteExpense($index)">Delete</button>
+      </td>
+    </tr>
+  </table>
+
+</div>
