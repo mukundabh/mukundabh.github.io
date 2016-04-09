@@ -13,7 +13,7 @@
     </div>
     <div class="form-group" style="margin: 10px 0">
       <label for="expenseDate">Date</label>
-      <input type="date" class="form-control" id="expenseDate" placeholder="date" ng-model="expenseModel.date">
+      <input type="text" class="form-control" id="expenseDate" placeholder="MM/DD/YYYY" ng-model="expenseModel.date">
       <label for="expenseDescription">Description</label>
       <input type="text" class="form-control" id="expenseDescription" placeholder="Description" ng-model="expenseModel.description">
       <label for="expenseAmount">Amount</label>
@@ -54,12 +54,13 @@
         <td>{{expense.firstName}}</td>
         <td>{{expense.lastName}}</td>
         <td>{{expense.email}}</td>
-        <td>{{expense.date | date:'shortDate'}}</td>
+        <td>{{expense.date}}</td>
         <td>{{expense.description}}</td>
         <td>{{expense.amount | currency}}</td>
         <td>{{expense.category}}</td>
         <td>
-          <button type="button" class="btn btn-default btn-sm" ng-click="deleteExpense($index)">Delete</button>
+          <button type="button" class="btn btn-default btn-danger" ng-click="deleteExpense($index)">Delete</button>
+          <button type="button" class="btn btn-default btn-warning" ng-click="editExpense($index)">Edit</button>
         </td>
       </tr>
     </table>

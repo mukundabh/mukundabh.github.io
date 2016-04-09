@@ -1,5 +1,5 @@
 
-var myAppModule = angular.module('accountingApp', ['ngRoute']);
+var myAppModule = angular.module('accountingApp', ['ngRoute','ui.bootstrap']);
 
 myAppModule.config(function($routeProvider) {
   $routeProvider
