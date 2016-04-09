@@ -31,18 +31,20 @@ angular.module('accountingApp').controller('balanceController', function ($scope
   ];
 
   $scope.addExpense = function (expense) {
-    var expenseObject = {
-      firstName: expense.firstName,
-      lastName: expense.lastName,
-      email: expense.email,
-      date: expense.date,
-      description: expense.description,
-      amount: expense.amount,
-      category: expense.category
-    };
-    // This method can be used to call the post api with relevant payload
-    $scope.expenses.push(expenseObject);
-    $scope.expenseModel = {};
+    if (expense) {
+      var expenseObject = {
+        firstName: expense.firstName,
+        lastName: expense.lastName,
+        email: expense.email,
+        date: expense.date,
+        description: expense.description,
+        amount: expense.amount,
+        category: expense.category
+      };
+      // This method can be used to call the post api with relevant payload
+      $scope.expenses.push(expenseObject);
+      $scope.expenseModel = {};
+    }
   }
 
   $scope.deleteExpense = function ($index) {
