@@ -67,7 +67,7 @@ angular.module('accountingApp').controller('balanceController', function ($scope
       animation: $scope.animationsEnabled,
       templateUrl: 'balance/editModal.html',
       controller: 'modalCtl',
-      size: 'lg',
+      size: 'md',
       resolve: {
         expense: function () {
           return expenseObject;
